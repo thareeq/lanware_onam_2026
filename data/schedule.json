@@ -1,1 +1,44 @@
-{"schedule":[{"time":"9:00","event":"Badminton","venue":"Court"},{"time":"10:30","event":"Football","venue":"Ground"}]}
+{
+  "days": [
+    {
+      "title": "Day 1",
+      "date": "2026-08-10",
+      "events": [
+        {
+          "time": "09:00",
+          "category": "Sports",
+          "event": "Badminton",
+          "venue": "Court",
+          "status": "Completed"
+        },
+        {
+          "time": "10:30",
+          "category": "Sports",
+          "event": "Football",
+          "venue": "Ground",
+          "status": "Live"
+        },
+        {
+          "time": "02:00",
+          "category": "Cultural",
+          "event": "Drawing",
+          "venue": "Hall",
+          "status": "Upcoming"
+        }
+      ]
+    },
+    {
+      "title": "Day 2",
+      "date": "2026-08-11",
+      "events": [
+        {
+          "time": "09:00",
+          "category": "Sports",
+          "event": "Chess",
+          "venue": "Room",
+          "status": "Upcoming"
+        }
+      ]
+    }
+  ]
+}

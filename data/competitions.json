@@ -1,5 +1,28 @@
-{"competitions":[
-{"name":"Badminton","winners":{"first":"Brahmayugam","second":"Athiradi","third":"KVK"}},
-{"name":"Football","winners":{"first":"Athiradi","second":"Brahmayugam","third":"KVK"}},
-{"name":"Chess","winners":{"first":"","second":"","third":""}}
-]}
+{
+  "competitions": [
+    {
+      "name": "Badminton",
+      "winners": {
+        "first": "Brahmayugam",
+        "second": "Athiradi",
+        "third": "KVK"
+      }
+    },
+    {
+      "name": "Football",
+      "winners": {
+        "first": "Athiradi",
+        "second": "Brahmayugam",
+        "third": "KVK"
+      }
+    },
+    {
+      "name": "Chess",
+      "winners": {
+        "first": "",
+        "second": "",
+        "third": ""
+      }
+    }
+  ]
+}
