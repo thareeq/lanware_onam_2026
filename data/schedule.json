@@ -1,7 +1,7 @@
 {
   "days": [
     {
-      "title": "08 Aug, Friday",
+      "title": "Friday",
       "date": "08 Aug",
       "events": [
         {
@@ -28,7 +28,7 @@
       ]
     },
     {
-      "title": "10 Aug, Monday",
+      "title": "Monday",
       "date": "10 Aug",
       "events": [
         {
@@ -56,8 +56,8 @@
       ]
     },
     {
-      "title": "11 Aug, Tuesday",
-      "date": "10 Aug",
+      "title": "Tuesday",
+      "date": "11 Aug",
       "events": [
         {
           "time": "03:00 - 03:30",
