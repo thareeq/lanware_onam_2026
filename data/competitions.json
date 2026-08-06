@@ -1,25 +1,7 @@
 {
   "competitions": [
     {
-      "name": "Badminton",
-      "category": "Sports",
-      "winners": {
-        "first": "Brahmayugam",
-        "second": "Athiradi",
-        "third": "KVK"
-      }
-    },
-    {
-      "name": "Football",
-      "category": "Sports",
-      "winners": {
-        "first": "Athiradi",
-        "second": "Brahmayugam",
-        "third": "KVK"
-      }
-    },
-    {
-      "name": "Carrom",
+      "name": "Badminton Men",
       "category": "Sports",
       "winners": {
         "first": "",
@@ -28,8 +10,71 @@
       }
     },
     {
+      "name": "Badminton Women",
+      "category": "Sports",
+      "winners": {
+        "first": "",
+        "second": "",
+        "third": ""
+      }
+    },
+    {
+      "name": "Badminton Mixed",
+      "category": "Sports",
+      "winners": {
+        "first": "",
+        "second": "",
+        "third": ""
+      }
+    },
+    {
+      "name": "Football",
+      "category": "Sports",
+      "winners": {
+        "first": "",
+        "second": "",
+        "third": ""
+      }
+    },
+    {
+      "name": "Carroms Men",
+      "category": "Sports",
+      "winners": {
+        "first": "",
+        "second": "",
+        "third": ""
+      }
+    },
+    {
+      "name": "Carroms Mixed",
+      "category": "Sports",
+      "winners": {
+        "first": "",
+        "second": "",
+        "third": ""
+      }
+    },
+    {
+      "name": "Carroms Women",
+      "category": "Sports",
+      "winners": {
+        "first": "Brahmayugam",
+        "second": "Athiradi",
+        "third": "KVK"
+      }
+    },
+    {
       "name": "Chess",
       "category": "Sports",
+      "winners": {
+        "first": "",
+        "second": "",
+        "third": ""
+      }
+    },
+    {
+      "name": "Story Writing",
+      "category": "Cultural",
       "winners": {
         "first": "",
         "second": "",
