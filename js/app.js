@@ -1,1 +1,51 @@
-async function g(f){return (await fetch(f)).json()} ;(async()=>{const[t,c,a,s]=await Promise.all([g('data/teams.json'),g('data/competitions.json'),g('data/announcements.json'),g('data/schedule.json')]);let p={};t.teams.forEach(x=>p[x]=0);c.competitions.forEach(x=>{if(x.winners.first)p[x.winners.first]+=5;if(x.winners.second)p[x.winners.second]+=3;if(x.winners.third)p[x.winners.third]+=1});let st=document.getElementById('standings');if(st){let m=Math.max(...Object.values(p));Object.entries(p).sort((a,b)=>b[1]-a[1]).forEach(e=>st.innerHTML+=`<div class='team'><div style='width:80%'><b>${e[0]}</b><div class='bar'><div class='fill' style='width:${e[1]/m*100}%'></div></div></div><b>${e[1]}</b></div>`)}let an=document.getElementById('announcements');if(an)a.announcements.forEach(x=>an.innerHTML+=`<div class='notice'>${x}</div>`);let rs=document.getElementById('results');if(rs)c.competitions.filter(x=>x.winners.first).forEach(x=>rs.innerHTML+=`<div class='card'><h3>${x.name}</h3><table><tr><th>Place</th><th>Winner</th></tr><tr><td>1</td><td>${x.winners.first}</td></tr><tr><td>2</td><td>${x.winners.second}</td></tr><tr><td>3</td><td>${x.winners.third}</td></tr></table></div>`);let sch=document.getElementById('schedule');if(sch){s.days.forEach(d=>{sch.innerHTML+=`<div class='card'><h2>${d.title} - ${d.date}</h2><table><tr><th>Time</th><th>Category</th><th>Competition</th><th>Venue</th><th>Status</th></tr>${d.events.map(e=>`<tr><td>${e.time}</td><td>${e.category}</td><td>${e.event}</td><td>${e.venue}</td><td>${e.status}</td></tr>`).join('')}</table></div>`})}})().catch(()=>document.body.innerHTML='<h3>Serve with a web server (GitHub Pages/Netlify or python -m http.server).</h3>');
+
+async function load(f){return (await fetch(f)).json();}
+(async()=>{
+const [teams,comp,ann,sch]=await Promise.all([
+load('data/teams.json'),
+load('data/competitions.json'),
+load('data/announcements.json'),
+load('data/schedule.json')
+]);
+
+const pts={};teams.teams.forEach(t=>pts[t]=0);
+comp.competitions.forEach(c=>{
+ if(c.winners.first) pts[c.winners.first]+=5;
+ if(c.winners.second) pts[c.winners.second]+=3;
+ if(c.winners.third) pts[c.winners.third]+=1;
+});
+
+const st=document.getElementById("standings");
+if(st){
+ st.innerHTML="";
+ const max=Math.max(...Object.values(pts),1);
+ Object.entries(pts).sort((a,b)=>b[1]-a[1]).forEach(([team,p],i)=>{
+ st.innerHTML+=`<div class="team"><div class="row"><b>${["🥇","🥈","🥉"][i]} ${team}</b><b>${p} pts</b></div><div class="bar"><div class="fill" style="width:${p/max*100}%"></div></div></div>`;
+ });
+}
+
+const ad=document.getElementById("announcements");
+if(ad){ann.announcements.forEach(n=>ad.innerHTML+=`<div class="notice">${n}</div>`);}
+
+const rs=document.getElementById("results");
+if(rs){
+ comp.competitions.filter(c=>c.winners.first||c.winners.second||c.winners.third).forEach(c=>{
+ rs.innerHTML+=`<div class="card"><h2>${c.name}</h2><table><tr><th>Place</th><th>House</th></tr>
+ <tr><td>🥇</td><td>${c.winners.first||"-"}</td></tr>
+ <tr><td>🥈</td><td>${c.winners.second||"-"}</td></tr>
+ <tr><td>🥉</td><td>${c.winners.third||"-"}</td></tr></table></div>`;
+ });
+}
+
+const sc=document.getElementById("schedule");
+if(sc){
+ sc.innerHTML="";
+ sch.days.forEach(day=>{
+   let rows=day.events.map(e=>`<tr><td>${e.time}</td><td>${e.category}</td><td>${e.event}</td><td>${e.venue}</td><td><span class="badge ${e.status}">${e.status}</span></td></tr>`).join("");
+   sc.innerHTML+=`<div class="card"><h2>📅 ${day.title} <small>${day.date}</small></h2><table><tr><th>Time</th><th>Category</th><th>Competition</th><th>Venue</th><th>Status</th></tr>${rows}</table></div>`;
+ });
+}
+})().catch(err=>{
+document.body.innerHTML="<h2 style='padding:20px'>Unable to load JSON. Use a local web server or GitHub/Netlify hosting instead of opening with file://</h2>";
+console.error(err);
+});

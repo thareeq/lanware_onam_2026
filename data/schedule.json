@@ -2,7 +2,7 @@
   "days": [
     {
       "title": "Day 1",
-      "date": "2026-08-10",
+      "date": "10 Aug",
       "events": [
         {
           "time": "09:00",
@@ -19,7 +19,7 @@
           "status": "Live"
         },
         {
-          "time": "02:00",
+          "time": "14:00",
           "category": "Cultural",
           "event": "Drawing",
           "venue": "Hall",
@@ -29,13 +29,27 @@
     },
     {
       "title": "Day 2",
-      "date": "2026-08-11",
+      "date": "11 Aug",
       "events": [
         {
           "time": "09:00",
           "category": "Sports",
           "event": "Chess",
-          "venue": "Room",
+          "venue": "Meeting Room",
+          "status": "Upcoming"
+        },
+        {
+          "time": "11:00",
+          "category": "Cultural",
+          "event": "Creative Writing",
+          "venue": "Training Room",
+          "status": "Upcoming"
+        },
+        {
+          "time": "15:00",
+          "category": "Cultural",
+          "event": "Singing",
+          "venue": "Auditorium",
           "status": "Upcoming"
         }
       ]
