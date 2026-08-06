@@ -1,0 +1,49 @@
+{
+  "competitions": [
+    {
+      "name": "Badminton",
+      "category": "Sports",
+      "winners": {
+        "first": "Brahmayugam",
+        "second": "Athiradi",
+        "third": "KVK"
+      }
+    },
+    {
+      "name": "Football",
+      "category": "Sports",
+      "winners": {
+        "first": "Athiradi",
+        "second": "Brahmayugam",
+        "third": "KVK"
+      }
+    },
+    {
+      "name": "Carrom",
+      "category": "Sports",
+      "winners": {
+        "first": "",
+        "second": "",
+        "third": ""
+      }
+    },
+    {
+      "name": "Chess",
+      "category": "Sports",
+      "winners": {
+        "first": "",
+        "second": "",
+        "third": ""
+      }
+    },
+    {
+      "name": "Drawing",
+      "category": "Cultural",
+      "winners": {
+        "first": "",
+        "second": "",
+        "third": ""
+      }
+    }
+  ]
+}
