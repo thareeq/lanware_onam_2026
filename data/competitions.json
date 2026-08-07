@@ -89,6 +89,33 @@
         "second": "",
         "third": ""
       }
+    },
+    {
+      "name": "Group Song",
+      "category": "Cultural",
+      "winners": {
+        "first": "",
+        "second": "",
+        "third": ""
+      }
+    },
+    {
+      "name": "Group Dance",
+      "category": "Cultural",
+      "winners": {
+        "first": "",
+        "second": "",
+        "third": ""
+      }
+    },
+    {
+      "name": "Reel Competition",
+      "category": "Cultural",
+      "winners": {
+        "first": "",
+        "second": "",
+        "third": ""
+      }
     }
   ]
 }
