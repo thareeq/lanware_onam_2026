@@ -51,8 +51,28 @@
           "event": "KVK vs Brahmayugam",
           "venue": "Meeting Room",
           "status": "Upcoming"
+        },
+        {
+          "time": "05:00 - 05:30",
+          "category": "Football",
+          "event": "KVK vs Athiradu",
+          "venue": "Dug out Turf",
+          "status": "Upcoming"
+        },
+        {
+          "time": "05:30 - 06:00",
+          "category": "Football",
+          "event": "KVK vs Brahmayugam",
+          "venue": "Dug out Turf",
+          "status": "Upcoming"
+        },
+        {
+          "time": "06:00 - 06:30",
+          "category": "Football",
+          "event": "Brahmayugam vs Athiradi",
+          "venue": "Dug out Turf",
+          "status": "Upcoming"
         }
-        
       ]
     },
     {
@@ -71,6 +91,13 @@
           "category": "Cultural",
           "event": "Pencil Drawing",
           "venue": "-",
+          "status": "Upcoming"
+        },
+        {
+          "time": "05:00 - 05:30",
+          "category": "Football",
+          "event": "Finals",
+          "venue": "Dug out Turf",
           "status": "Upcoming"
         }
       ]
