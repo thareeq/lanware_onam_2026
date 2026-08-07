@@ -9,21 +9,21 @@
           "category": "Badminton Men Finals",
           "event": "Brahmayugam vs Athiradi",
           "venue": "Court",
-          "status": "Upcoming"
+          "status": "Completed"
         },
         {
           "time": "05:00 - 05:30",
           "category": "Badminton Women Finals",
           "event": "Brahmayugam vs Athiradi",
           "venue": "Court",
-          "status": "Upcoming"
+          "status": "Completed"
         },
         {
           "time": "05:30 - 06:00",
           "category": "Badminton Mixed Finals",
           "event": "KVK vs BY vs Athiradi",
           "venue": "Court",
-          "status": "Upcoming"
+          "status": "Completed"
         }
       ]
     },
